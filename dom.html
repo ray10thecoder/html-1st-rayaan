@@ -1,0 +1,32 @@
+<html>
+<head>
+    <title>tutorial</title>
+    <style>
+    .alert {
+        padding: 5px;
+        background:submarine greenyellow;
+        color: aqua;
+    }
+    </style>
+</head>
+<body>
+<h1 id="heading">Welcome</h1>
+<h2 id="heading1">Subheading</h2>
+<p>Hello</p>
+<p>how are you?</p>
+<script>
+let div = document.createElement("div");
+div.id = "paragraph";
+div.className = "alert";
+div.innerHTML = "Congrats,you have created a div.";
+document.body.append(div);
+
+let heading = document.getElementById("heading");
+
+let heading1 = document.getElementById("heading1");
+heading1.innerHTML = "&#128513;";
+
+document.querySelector("header.p").innerHTML = "<strong>Good job</strong>";
+</script>
+</body>
+</html>
