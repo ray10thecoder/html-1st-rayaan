@@ -1,0 +1,55 @@
+<html>
+<head>
+    <title>A creepy story</title>
+<style>
+
+h2 {
+    text-align: center;
+}
+    .rectangle {
+        width: 200px;
+        height: 200px;
+        margin: auto;
+        border: 1px solid black;
+    }
+
+    .buttons {
+        padding: 20px;
+        width: 200px;
+        text-align: center;
+        margin-top: 20px;
+    }
+</style>
+</head>
+<body>
+<h2>Make changes to the rectangle</h2>
+<div class="rectangle"></div>
+<div class="buttons">
+    <button onclick="changeToCircle()">Make Circle</button>
+    <button onclick="hideRect()">Hide Rectangle</button>
+    <button onclick="showRect()">Show Rectangle</button>
+</div>
+<script>
+let div = document.querySelector(".rectangle");
+function changeToCircle() {
+    div.style.borderRadius = "50%";
+}
+
+function hideRect() {
+    div.style.display = "none";
+}
+
+function showRect() {
+    div.style.display = "block";
+}
+
+div.onmouseenter = function() {
+    div.style.backgroundColor = "red";
+}
+
+div.onmouseleave = function() {
+    div.style.backgroundColor = "transparent";
+}
+</script>
+</body>
+</html>
